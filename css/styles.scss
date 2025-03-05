@@ -1,0 +1,9 @@
+@use 'fonts';
+@use 'colors';
+
+@import 'footer';
+@import 'nav';
+
+body{
+    background-color: colors.$main;
+}
