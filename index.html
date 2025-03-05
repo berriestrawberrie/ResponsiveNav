@@ -15,10 +15,27 @@
            <!--CUSTOM CSS-->
            <link rel="stylesheet" href="css/styles.css">
            <link rel="stylesheet" href="css/nav.css">
-           <link rel="stylesheet" href="css/footer.css">
-           <title>Webpage</title>
-</head>
+           <title>Fashion House</title>
+           <!--SEO-->
+           <meta name="description" content="Fashion House webpage. We are local designers that develop high fashion. ">
+           <meta name="og:description" content="Fashion House webpage. We are local designers that develop high fashion. ">
+           <meta name="twitter:description" content="Fashion House webpage. We are local designers that develop high fashion. ">
+        </head>
 <body>
+    <div id="myNav" class="overlay">
+        <span onclick="closeNav()">
+            <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+                <line x1="20" y1="20" x2="75" y2="75" class="x"/>
+                <line x1="75" y1="20" x2="20" y2="75"  class="x"/>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+        </span>
+        <ul>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
     <header>
         <nav>
             <div class="logos">
@@ -29,20 +46,19 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-                <span><i class="fa-solid fa-x"></i></span>
+                <span onclick="openNav()"><i class="fa-solid fa-x"></i></span>
             </div>
-            
         </nav>
     </header>
     <main>
         <section class="title">
             <div class="title___images">
-                <img src="images/grid.png" alt="grid" width="300">
+                <img src="images/grid.png" alt="grid image" width="300">
                 <div class="mainimage">
-                    <img src="images/jennifer-mela.jpg" alt="">
+                    <img src="images/jennifer-mela.jpg" alt="fashion model">
                 </div>
             </div>
             <div class="title__content">
@@ -69,6 +85,14 @@
         </section>
 
     </main> 
-    
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+        }
+        </script>
 </body>
 </html>

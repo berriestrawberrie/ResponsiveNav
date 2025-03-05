@@ -1,0 +1,44 @@
+/*SMALL & MEDIUM SCREENS*/
+@media screen and (max-width: 768px) {
+
+     .overlay{
+        display: none;
+        left: 0;
+        top: 0;
+        position: fixed;
+        background-color: colors.$main;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+
+        ul{
+            display: block;
+            li{
+                background-color: colors.$accent;
+                margin: 40px auto;
+                width: 60%;
+                padding: 10px;
+                text-align: center;
+                font-size: 26px;
+            }
+            a:hover{
+                color: colors.$main;
+            }
+        }
+        span{
+            margin: 10px;
+            stroke-width: 20px;
+            stroke: colors.$accent;
+            scale: .5;
+        }
+        span:hover{
+            stroke: colors.$text;
+        }
+
+
+        
+     }/*END OF OVERLAY*/
+
+
+    
+}/*END OF SMALL & MEDIUM*/

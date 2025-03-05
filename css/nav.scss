@@ -1,10 +1,10 @@
+@import 'overlay';
+
 nav{
-    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 45px;
     border-bottom: 2px solid colors.$text;
-   
 
     .logos{
         display: flex; 
@@ -14,19 +14,21 @@ nav{
         }
     }
     .menu{
-     
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         font-weight: 600;
     }
-
+  
 }
 
 
 
 /*LARGE*/
 @media screen and (min-width: 769px) {
+    .overlay{
+        display: none;
+    }
 
     .menu{
         display: flex;
@@ -39,12 +41,12 @@ nav{
             font-size: 22px;
         }
     }
-
     
-}
+}/*END OF LARGE*/
 
 /*MED*/
 @media screen and (max-width: 768px) {
+
 
     .menu{
         ul{
@@ -56,18 +58,18 @@ nav{
            
         }
     }
-
     
-}
+}/*END OF MEDIUM*/
 
 
 
 /*SMALL*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
 
     .menu{
+       
         ul{
-            display: none;
+            display:none;
         }
         span{
             display: block;
@@ -76,5 +78,6 @@ nav{
         }
     }
 
+
     
-}
+}/*END OF SMALL*/
