@@ -1,0 +1,114 @@
+/*SMALL & MEDIUM SCREENS*/
+@media screen and (max-width: 768px) {
+  .overlay {
+    display: none;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: #F33B3C;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .overlay ul {
+    display: block;
+  }
+  .overlay ul li {
+    background-color: #000;
+    margin: 40px auto;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+  }
+  .overlay ul a:hover {
+    color: #F33B3C;
+  }
+  .overlay span {
+    margin: 10px;
+    stroke-width: 20px;
+    stroke: #000;
+    scale: 0.5;
+  }
+  .overlay span:hover {
+    stroke: #F7F933;
+  }
+  /*END OF OVERLAY*/
+} /*END OF SMALL & MEDIUM*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45px;
+  border-bottom: 2px solid #F7F933;
+}
+nav .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logos a {
+  margin-left: 5px;
+}
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+}
+
+/*LARGE*/
+@media screen and (min-width: 769px) {
+  .overlay {
+    display: none;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 600;
+  }
+  .menu span {
+    display: none;
+    font-weight: 700;
+    font-size: 22px;
+  }
+} /*END OF LARGE*/
+/*MED*/
+@media screen and (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
+  .menu span {
+    display: block;
+    margin-right: 10px;
+  }
+} /*END OF MEDIUM*/
+/*SMALL*/
+@media screen and (max-width: 576px) {
+  .menu ul {
+    display: none;
+  }
+  .menu span {
+    display: block;
+    margin-right: 10px;
+  }
+} /*END OF SMALL*/
