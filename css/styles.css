@@ -6,6 +6,8 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 45px;
+  border-bottom: 2px solid #F7F933;
 }
 nav .logos {
   display: -webkit-box;
@@ -71,6 +73,154 @@ nav .menu {
     margin-right: 10px;
   }
 }
+/*LARGE:: */
+@media screen and (min-width: 769px) {
+  .title {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .mainimage {
+    position: absolute;
+    overflow: hidden;
+    background-color: #F33B3C;
+    top: 20px;
+    left: 20px;
+    height: 360px;
+    width: 35%;
+    min-width: 250px;
+    border-radius: 0px 100px 0px 100px;
+    border: 2px solid #F7F933;
+  }
+  .mainimage img {
+    margin-top: -120px;
+    width: 500px;
+  }
+  .title__content {
+    max-height: 100%;
+    width: 60%;
+  }
+  .title__content h2 {
+    float: right;
+    width: 40%;
+  }
+  .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .box p {
+    color: #F7F933;
+  }
+  .box span {
+    font-size: 45px;
+    stroke: #000;
+    stroke-width: 20px;
+  }
+  .box span:hover {
+    stroke: #F7F933;
+  }
+} /*END LARGE
+
+
+/*MED:: 768PX*/
+@media screen and (max-width: 768px) {
+  .title {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .mainimage {
+    position: absolute;
+    overflow: hidden;
+    background-color: #F33B3C;
+    top: 20px;
+    left: 20px;
+    height: 360px;
+    width: 30%;
+    min-width: 250px;
+    border-radius: 0px 100px 0px 100px;
+    border: 2px solid #F7F933;
+  }
+  .mainimage img {
+    margin-top: -120px;
+    width: 500px;
+  }
+  .title__content {
+    max-height: 100%;
+    width: 60%;
+  }
+  .box {
+    padding: 10px;
+  }
+  .box p {
+    color: #F7F933;
+  }
+  .box span {
+    display: none;
+  }
+} /*END OF 768px*/
+/*SMALL: 576PX*/
+@media screen and (max-width: 576px) {
+  .title {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+  }
+  .mainimage {
+    position: absolute;
+    overflow: hidden;
+    background-color: #F33B3C;
+    top: 20px;
+    left: 20px;
+    height: 320px;
+    width: 80%;
+    min-width: 250px;
+    border-radius: 0px 100px 0px 100px;
+    border: 2px solid #F7F933;
+  }
+  .mainimage img {
+    margin-top: -120px;
+    width: 500px;
+  }
+  .title__content {
+    max-height: 100%;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .box {
+    padding: 10px;
+  }
+  .box p {
+    color: #F7F933;
+  }
+  .box span {
+    display: none;
+  }
+} /*END OF 576px*/
 * {
   font-family: "Mulish", sans-serif;
 }
@@ -80,7 +230,6 @@ body {
   max-width: 1200px;
   background-color: #F33B3C;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 a {
@@ -112,41 +261,53 @@ h1, h2, h3 {
   padding: 5px;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-}
-
-h1 {
-  font-size: 40px;
-  line-height: 43px;
-}
-
-h2 {
-  font-size: 26px;
-  line-height: 29px;
-}
-
-h3 {
-  font-size: 22px;
-  line-height: 25px;
+  margin: 10px 0;
+  text-align: center;
 }
 
 /*LARGE*/
 @media screen and (min-width: 321px) {
   body {
     width: 80%;
-    border: 2px solid black;
+  }
+  h1 {
+    background-color: transparent;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: left;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 21px;
   }
 }
 /*MED*/
 @media screen and (max-width: 768px) {
   body {
     width: 90%;
-    border: 2px solid blue;
+  }
+  h1 {
+    background-color: transparent;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: left;
+  }
+  h2 {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  h3 {
+    font-size: 12px;
+    line-height: 25px;
   }
 }
 /*SMALL*/
 @media screen and (max-width: 320px) {
   body {
     width: 95%;
-    border: 2px solid yellow;
   }
 }
